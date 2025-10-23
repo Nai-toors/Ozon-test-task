@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Progress Block</title>
+  </head>
+  <body>
+    <div>
+      <h1>Progress</h1>
+
+      <!-- точка монтирования -->
+      <div id="progress-container"></div>
+
+      <!-- панель управления -->
+      <div>
+        <div>
+          <input type="number" id="value-input" min="0" max="100" value="60" />
+          <label for="value-input">Value</label>
+        </div>
+
+        <div>
+          <label>
+            <input type="checkbox" id="animate-checkbox" />
+          </label>
+          <label for="animate-checkbox">Animate</label>
+        </div>
+
+        <div>
+          <label>
+            <input type="checkbox" id="hide-checkbox" />
+          </label>
+          <label for="hide-checkbox">Hide</label>
+        </div>
+      </div>
+    </div>
+
+    <script type="module" src="js/main.js"></script>
+  </body>
+</html>
