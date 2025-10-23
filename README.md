@@ -2,7 +2,7 @@
 
 Круговой прогресс-бар с анимацией, созданный на чистом JavaScript и CSS. Создано в рамках тестового задания для Ozon банк.
 
-## Демо доступно по [ссылке](https://nai-toors.github.io/Ozon-test-task/)
+## Демо доступно по [ссылке](https://nai-toors.github.io/ozon-test-task/)
 
 
 ## Возможности
