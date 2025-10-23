@@ -4,31 +4,32 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Progress Block</title>
+    <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <div>
-      <h1>Progress</h1>
+    <div class="container">
+      <h1 class="title">Progress</h1>
 
       <!-- точка монтирования -->
       <div id="progress-container"></div>
 
       <!-- панель управления -->
-      <div>
-        <div>
-          <input type="number" id="value-input" min="0" max="100" value="60" />
+      <div class="controls">
+        <div class="control-item">
+          <input id="value-input" value="75" />
           <label for="value-input">Value</label>
         </div>
-
-        <div>
-          <label>
+        <div class="control-item">
+          <label class="switch">
             <input type="checkbox" id="animate-checkbox" />
+            <span class="slider"></span>
           </label>
           <label for="animate-checkbox">Animate</label>
         </div>
-
-        <div>
-          <label>
+        <div class="control-item">
+          <label class="switch">
             <input type="checkbox" id="hide-checkbox" />
+            <span class="slider"></span>
           </label>
           <label for="hide-checkbox">Hide</label>
         </div>
