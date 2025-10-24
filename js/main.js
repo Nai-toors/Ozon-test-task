@@ -12,9 +12,23 @@ const hideCheckbox = document.getElementById("hide-checkbox");
 
 progress.setValue(valueInput.value);
 
-// привязываем обработчики к API 
 valueInput.addEventListener("input", (e) => {
-  progress.setValue(e.target.value);
+  let value = e.target.value;
+
+  // берём только цифры
+  value = value.replace(/\D/g, "");
+
+  // убираем лишние нули (если ввести 000)
+  value = value.replace(/^0+(?=\d)/, "");
+
+  // ограничиваем значение от 0 до 100
+  const numValue = parseInt(value);
+  if (numValue > 100) {
+    value = "100";
+  }
+
+  e.target.value = value;
+  progress.setValue(value);
 });
 
 animateCheckbox.addEventListener("change", (e) => {
